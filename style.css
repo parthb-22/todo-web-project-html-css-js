@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#153677,#b9cdf4);
+    padding: 10px;
+}
+.ToDo-List{
+    border: 2px solid red;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 img{
+    height: 50px;
+    width:50px;
+    margin-left:10px ;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background:rgb(254, 251,251);
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+input{
+    padding:20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 15px 21px;
+    border-radius: 23px;
+    background-color:chartreuse;
+    cursor: pointer;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+ul li{
+    padding: 10px 8px 17px 50px;
+    list-style: none;
+    /* margin-left: 43px; */
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    background-image:url("./images/unchecked.png");
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    top: 8px;
+    left:10px;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("./images/checked.png");
+}
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+
+}
+/* button{
+    position: absolute;
+    margin-left: 240px;
+    
+} */
